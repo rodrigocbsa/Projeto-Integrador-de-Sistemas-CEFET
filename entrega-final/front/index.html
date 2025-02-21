@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>La Saveur | Login</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="src/assets/images/favicon.svg" type="image/x-icon" />
+  
+    <script type="module" src="src/app/index.ts" defer></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="module"></script>
+
+    <!-- ========== CSS ========= -->
+    <link rel="stylesheet" href="src/assets/css/main.css" />
+  </head>
+<body>
+
+    <div>
+        <div class="container-fluid">
+
+            <div class="title-wrapper pt-30">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h2>Login | La Saveur</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row auth-row justify-content-md-center">
+                <div class="col-md-auto">
+                    <div class="signup-wrapper">
+                        <div class="form-wrapper">
+                            <form>
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <div class="input-style-1">
+                                            <label for="usuario">Usuário</label>
+                                            <input id="usuario" name="usuario" type="text" placeholder="Insira aqui o seu usuário de trabalho..." required/>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="input-style-1">
+                                            <label for="senha">Senha</label>
+                                            <input id="senha" name="senha" type="password" placeholder="Insira aqui a sua senha..." required/>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <div class="button-group d-flex justify-content-center flex-wrap">
+                                            <button name="Entrar" class="main-btn primary-btn btn-hover w-100 text-center" id="logar">
+                                            Entrar
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        <!-- end form-wrapper-->
+                    </div>
+                    <!-- end signup-wrapper-->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+    </main>
+
+</body>
+</html>

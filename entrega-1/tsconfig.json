@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "sourceMap": true,
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": ["@vitest/browser/providers/playwright"],
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    /* Emit settings */
+    "noEmit": false, // Permite que o TypeScript gere arquivos de saída
+    "rootDir": "front/src",
+    "outDir": "./dist",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+    // "noUncheckedSideEffectImports": true
+  },
+  "include": [
+    "front/"
+  ]
+}

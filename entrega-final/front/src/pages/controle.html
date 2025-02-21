@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Estoque | Histórico de Movimentações | La Saveur</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
+  
+    <script type="module" src="../app/index-controle.ts" defer></script>
+    <script src="../assets/js/sidebar.js" defer></script>
+    <script type="module" src="../assets/js/header.js" defer></script>
+    <script src="../assets/js/comportamento-sidebar.js" defer></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Feather icons -->
+    <script src="../../node_modules/feather-icons/dist/feather.min.js"></script>
+
+    <!-- ========== CSS ========= -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+
+    <!-- ======== SIDEBAR =========== -->
+    <div id="sidebar-div"></div>
+    <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+    <!-- ======== main-wrapper start =========== -->
+    <main class="main-wrapper active">
+      
+      <!-- ========== header start ========== -->
+      <div id="header-div"></div>
+      <!-- ========== header end ========== -->
+
+      
+      <section class="tab-components">
+        <div class="container-fluid">
+          
+          <div class="title-wrapper pt-30">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="title">
+                  <h2>Estoque | Reposição</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-md-6">
+                <div class="breadcrumb-wrapper">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                      <li class="breadcrumb-item"><a>Estoque</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Reposição
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          
+        </div>
+        <!-- end container -->
+      </section>
+
+
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="card-style mb-30">
+                <div class="title">
+                  <h6 class="text-medium mb-30">Listagem de Produtos para Reposição</h6>
+                </div>
+                <!-- End Title -->
+                <div class="table-responsive">
+                  <table class="table top-selling-table overflow-x-auto">
+                    <thead>
+                        <tr>
+                          <th class="min-width">
+                              <h6 class="text-sm text-medium">#</h6>
+                          </th>
+                          <th class="min-width">
+                            <h6 class="text-sm text-medium">
+                              Status
+                            </h6>
+                          </th>
+                          <th class="min-width">
+                            <h6 class="text-sm text-medium">
+                              Nome Produto
+                            </h6>
+                          </th>
+                          <th class="min-width">
+                              <h6 class="text-sm text-medium">
+                                Código Produto
+                              </h6>
+                          </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>
+                              <p class="text-sm">-</p>
+                          </td>
+                          <td>
+                            <span class="status-btn close-btn">---</span>
+                            <!-- close-btn = vermelho (produto Reposição) -->
+                          </td>
+                          <td>
+                              <p class="text-sm">-</p>
+                          </td>
+                          <td>
+                              <p class="text-sm">-</p>
+                          </td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- End Table -->
+
+                <!-- 
+                <nav aria-label="...">
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link">Anterior</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Próximo</a>
+                    </li>
+                  </ul>
+                </nav>
+                -->
+
+              </div>
+          </div>
+          <!-- End Col -->
+        </div>
+      </section>
+
+    </main>
+    <script defer>feather.replace()</script>
+  </body>
+</html>

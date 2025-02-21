@@ -1,0 +1,33 @@
+{
+  "name": "g6",
+  "version": "6.1.6",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "e2e": "playwright test",
+    "e2e-ui": "playwright test --ui",
+    "test": "vitest run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.50.0",
+    "@types/node": "^22.10.10",
+    "@vitest/browser": "^3.0.4",
+    "composer": "^4.1.0",
+    "playwright": "^1.50.0",
+    "typescript": "~5.6.3",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "feather-icons": "^4.29.2",
+    "json-server": "1.0.0-beta.3",
+    "simple-notify": "^1.0.6",
+    "vite": "^5.4.11",
+    "vitest": "^3.0.4"
+  }
+}

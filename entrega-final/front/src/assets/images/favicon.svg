@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+  <!-- Fundo circular representando o prato -->
+  <circle cx="32" cy="32" r="30" fill="#f0f0f0" stroke="#d0d0d0" stroke-width="2"/>
+  
+  <!-- Garfo -->
+  <rect x="12" y="18" width="4" height="28" fill="#888"/>
+  <rect x="11" y="18" width="2" height="10" fill="#888"/>
+  <rect x="13" y="18" width="2" height="10" fill="#888"/>
+  <rect x="15" y="18" width="2" height="10" fill="#888"/>
+  
+  <!-- Faca -->
+  <rect x="48" y="18" width="4" height="28" fill="#888"/>
+  <rect x="50" y="18" width="2" height="10" fill="#bbb"/>
+  
+  <!-- Borda interna do prato -->
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+</svg>

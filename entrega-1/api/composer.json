@@ -1,0 +1,64 @@
+{
+    "name": "aluno/g6",
+    "autoload": {
+        "psr-4": {
+            "": [
+                "src/",
+                "src/Infra",
+                "src/Util",
+                "src/Funcionario/",
+                "src/Funcionario/Controladora",
+                "src/Funcionario/Infra",
+                "src/Funcionario/Modelo",
+                "src/Funcionario/Repositorio",
+                "src/Mesa/",
+                "src/Mesa/Controladora",
+                "src/Mesa/Infra",
+                "src/Mesa/Modelo",
+                "src/Mesa/Repositorio",
+                "src/Pedido/",
+                "src/Pedido/Controladora",
+                "src/Pedido/Infra",
+                "src/Pedido/Modelo",
+                "src/Pedido/Repositorio",
+                "src/Reserva/",
+                "src/Reserva/Controladora",
+                "src/Reserva/Infra",
+                "src/Reserva/Modelo",
+                "src/Reserva/Repositorio",
+                "src/Item/",
+                "src/Item/Controladora",
+                "src/Item/Infra",
+                "src/Item/Modelo",
+                "src/Item/Repositorio",
+                "src/Dashboard/",
+                "src/Dashboard/Controladora",
+                "src/Dashboard/Infra",
+                "src/Dashboard/Modelo",
+                "src/Dashboard/Repositorio"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo C. Arruda",
+            "email": "rodrigo.arruda@aluno.cefet-rj.br"
+        }
+    ],
+    "require-dev": {
+        "kahlan/kahlan": "^5.2",
+        "phpstan/phpstan": "^2.0"
+    },
+    "scripts": {
+        "test": "kahlan --watch",
+        "check": "phpstan analyse src --level 6",
+        "server": [
+            "Composer\\Config::disableProcessTimeout",
+            "php -S localhost:8080"
+        ]
+    },
+    "require": {
+        "phputil/router": "^0.3.3",
+        "phputil/cors": "^0.5.1"
+    }
+}

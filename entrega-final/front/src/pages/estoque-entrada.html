@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Gestão de Estoque | La Saveur</title>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon" />
+  
+    <script type="module" src="../app/index-estoque-entrada.ts" defer></script>
+    <script src="../assets/js/sidebar.js" defer></script>
+    <script type="module" src="../assets/js/header.js" defer></script>
+    <script src="../assets/js/comportamento-sidebar.js" defer></script>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Feather icons -->
+    <script src="../../node_modules/feather-icons/dist/feather.min.js"></script>
+
+    <!-- ========== CSS ========= -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body>
+
+    <!-- ======== SIDEBAR =========== -->
+    <div id="sidebar-div"></div>
+    <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+    <!-- ======== main-wrapper start =========== -->
+    <main class="main-wrapper active">
+      
+      <!-- ========== header start ========== -->
+      <div id="header-div"></div>
+      <!-- ========== header end ========== -->
+
+      
+      <section class="tab-components">
+        <div class="container-fluid">
+          
+          <div class="title-wrapper pt-30">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="title">
+                  <h2>Estoque | ENTRADAS</h2>
+                </div>
+              </div>
+              <!-- end col -->
+              <div class="col-md-6">
+                <div class="breadcrumb-wrapper">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                      <li class="breadcrumb-item"><a>Estoque</a></li>
+                      <li class="breadcrumb-item"><a>Movimentar</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">
+                        Entrada
+                      </li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </div>
+          
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6">
+              <div class="form-elements-wrapper">
+                <form action="">
+
+                  <div class="card-style mb-30">
+                    <h6 class="mb-15">Produtos</h6>
+                    <p class="mb-25 text-reset">Pesquise por todos os produtos que irá realizar ENTRADA. Clique duas vezes/Pressione e segure no produto da lista abaixo para removê-lo da movimentação.</p>
+                    <div class="input-style-2">
+                      <input id="codigo-pesquisa" type="text" placeholder="Código interno" tabindex="1">
+                      <span class="icon">
+                        <i data-feather="hash"></i>
+                      </span>
+                    </div>
+                    <p class="text-sm">ou</p>
+                    <div class="input-style-2">
+                      <input id="ean-pesquisa" type="text" placeholder="Código de barras" tabindex="2">
+                      <span class="icon">
+                        <i data-feather="grid"></i>
+                      </span>
+                    </div>
+                    <hr class="divider">
+                    <ul id="listagem-produtos-remocao" class="list-group list-group-numbered">
+                      <li class="list-group-item list-group-item-action list-group-item-info readonly-hoverable mb-1">--</li>
+                    </ul>
+                  </div>
+
+                  <div class="card-style mb-30">
+                    <h6 class="mb-15">Movimentação</h6>
+                    <p id="legenda-produtos" class="mb-25 text-reset">Atualize a quantidade a ENTRAR para cada produto pesquisado.</p>
+                    <div id="listagem-produtos-movimentacao">
+                      <div class="input-group">
+                        <span class="codigo input-group-text">(CÓDIGO INTERNO)</span>
+                        <input class="qtd form-control" type="number" placeholder="-" value="">
+                        <span class="qtd-att input-group-text">(ESTOQUE)</span>
+                        <span class="total-att input-group-text">(TOTAL)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-style mb-30">
+                    <h6 class="mb-25">Motivo</h6>
+                    <div class="input-style-3">
+                      <textarea id="motivo" placeholder="Escreva brevemente o motivo da movimentação aqui..." id="" tabindex="99"></textarea>
+                      <span class="icon">
+                        <i data-feather="type"></i>
+                      </span>
+                    </div>
+                    <a id="movimentar-estoque" class="main-btn primary-btn rounded-full btn-hover" tabindex="99">
+                      Confirmar Entrada
+                    </a>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- end container -->
+      </section>
+
+      <!-- ========== tab components end ========== -->
+    </main>
+    <!-- ======== main-wrapper end =========== -->
+     <script defer>feather.replace()</script>
+  </body>
+</html>
